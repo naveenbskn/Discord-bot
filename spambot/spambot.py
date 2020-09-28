@@ -1,7 +1,8 @@
 import discord
 client=discord.Client()
 
-
+key1="NzU5NzY2MTI0NDI1Mzc5ODUw.X3CRVw."
+key2="yD4b3RWYYjDORbYJpNtZhBHwUYQ"
 @client.event
 async def on_message(message):
     mes=message.content
@@ -10,5 +11,5 @@ async def on_message(message):
             for j in range(5):
                 await message.channel.send(mes.upper())
 
-client.run("NzU5NzY2MTI0NDI1Mzc5ODUw.X3CRVw.6txeRkLLw8uIcmIHSOk5oM3P7qg")
-        
+
+client.run(key1+key2)
